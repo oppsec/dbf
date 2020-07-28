@@ -12,7 +12,7 @@
 ### How to set-up?
 1. Open your VSCode
 2. Press `CTRL + Shift + X` or `CMD + Shift + X` to open extensions menu
-3. Search for `dontbefired` or `dbf-publisher`
+3. Search for `dbf` or `dbf-publisher`
 4. Click to **install**.
 5. Press F1 and type `DBF | Turn ON`
 6. **Done!** 🥳
