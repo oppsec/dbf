@@ -18,5 +18,5 @@
 6. **Done!** 🥳
 
 ### Contributing
-You can contribute with the extension suggesting messages to appear in the message box.
-Check the ![repository](https://github.com/oppsec/dbf) and create a pull request.
+You can contribute suggesting a message to appear in message box.
+What I need to do? Simple, create a issue.
