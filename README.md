@@ -18,5 +18,5 @@
 6. **Done!** 🥳
 
 ### Contributing
-You can contribute suggesting a message to appear in message box.
+You can contribute suggesting a message to appear in message box.<br>
 What I need to do? Simple, create a issue.
