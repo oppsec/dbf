@@ -1,0 +1,9 @@
+{
+    "message": "🤔 Did you closed the function correctly?",
+    "message2": "🤔 Have you tried running the code in a different machine?",
+    "message3": "🤔 Did you used the right operator?",
+    "message4": "🤔 Is the variable inside of block level?",
+    "message5": "🤔 Did you used 'length' or 'lenght'?",
+    "message6": "🤔 Are you using all the parameters?",
+    "message7": "🤔 Did you used the right variable name?"
+}

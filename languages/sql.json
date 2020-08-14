@@ -1,0 +1,9 @@
+{
+    "message": "🤔 Are you using DELETE with WHERE?",
+    "message2": "🤔 Did you select the correct database?",
+    "message3": "🤔 Did you write the statement correctly?",
+    "message4": "🤔 Didn't you forget a bracket or quote?",
+    "message5": "🤔 Did you specify the correct statements order?",
+    "message6": "🤔 Did you used the right operator?",
+    "message7": "🤔 Have you tried running the code in a different machine?"
+}

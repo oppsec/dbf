@@ -1,0 +1,9 @@
+{
+    "message": "🤔 Are you blocking the loop event?",
+    "message2": "🤔 Are you monitoring your app?",
+    "message3": "🤔 Did you wrote 'exports' or 'module.exports'?",
+    "message4": "🤔 Are you using all API advantages?",
+    "message5": "🤔 Have you tried using nodemon or pm2?",
+    "message6": "🤔 Have you tried running the code in a different machine?",
+    "message7": "🤔 Did you used the right operator?"
+}
