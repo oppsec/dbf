@@ -6,7 +6,7 @@
 	"author": "oppsec",
 	"repository": "https://github.com/oppsec/dbf",
 	"description": "🔥 Avoid mistakes that can get you fired",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"engines": {
 		"vscode": "^1.47.0"
 	},
@@ -14,8 +14,7 @@
 		"Other"
 	],
 	"activationEvents": [
-		"onCommand:dbf.activate",
-		"onCommand:dbf.deactivate"
+		"onCommand:dbf.activate"
 	],
 	"main": "./extension.js",
 	"contributes": {
