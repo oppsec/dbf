@@ -1,51 +1,58 @@
 const vscode = require('vscode');
-const { userInfo } = require('os');
 
 /**
  * @param {vscode.ExtensionContext} context
  */
 
+
+ // Activate function
 function activate(context) {
-
 	console.log('DBF activated 🥳');
-	const myCommandId = 'dbf.activate';
+	const dbfActivate = 'dbf.activate';
 
-	let turnon = vscode.commands.registerCommand(myCommandId, function () {
-
-		const getUser = userInfo();
-		const username = getUser['username'];
-
-		vscode.window.showInformationMessage(`Hello ${username}! Dont Be Fired extension activated 🎉🥳`);
-		getRandomMessage();
-
+	let turnon = vscode.commands.registerCommand(dbfActivate, function () {
+		vscode.window.showInformationMessage(`🎉 Dont Be Fired extension activated`);
+		askLanguage();
 	});
 
 	context.subscriptions.push(turnon);
 }
 
-function getRandomMessage() {
+// Ask User Language
+async function askLanguage() {
 
-	const RememberMe = [
-	'Have you done the backup already? 🤔', 
-	'Are you in the correct branch? 🤔',  
-	'Did you commit the changes already? 🤔',
-	'Are you in the correct file? 🤔',
-	'Have you tried running the code in a different machine? 🤔',
-	'Is the website responsive? 🤔'];
+	const languageInput = await vscode.window.showInputBox({ placeHolder: 'Type a language name: SQL, PHP, JS...'});
+	const languages = ['SQL', 'JavaScript', 'NodeJS', 'PHP']
 
-	setInterval(function () {
-		randomMessage(RememberMe);
-	}, 900000);
+	// Verify if language exists on array
+	if (languages.indexOf(languageInput) === -1) {
+		vscode.window.showErrorMessage('❌ Language not available');
+	} else {
+		vscode.window.showInformationMessage(`✅ Using ${languageInput} syntax`)
+
+		// Send a random message every 15 minutes
+		setInterval(function () {
+			randomMessage(languageInput);
+		}, 900000);
+	}
 
 }
 
-function randomMessage(RememberMe) {
-	const random = Math.floor(Math.random() * RememberMe.length);
-	vscode.window.showInformationMessage(RememberMe[random]);
+function randomMessage(languageInput) {
+	try{
+		const languageJsonFile = require(`./languages/${languageInput.toLocaleLowerCase()}.json`) // get JSON language file
+		const jsonMessages = Object.values(languageJsonFile)
+		const getRandomMessage = jsonMessages[parseInt(Math.random() * jsonMessages.length)]
+
+		vscode.window.showInformationMessage(getRandomMessage); // Print random message
+	} catch(e) {
+		vscode.window.showErrorMessage("❌ Error ->", e)
+	}
 }
+
+function deactivate() { }
 
 exports.activate = activate;
+exports.deactivate = deactivate;
 
-module.exports = {
-	activate
-}
+module.exports = { activate, deactivate }
