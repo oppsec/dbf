@@ -1,7 +1,7 @@
 {
     "message": "🤔 Are you using database caching?",
     "message2": "🤔 Did you protect Session ID?",
-    "message3": "🤔 Have you tried any SQLi?",
+    "message3": "🤔 Have you tried any SQL Injection?",
     "message4": "🤔 Have you validated the cookie data?",
     "message5": "🤔 Did you disable error repoting?",
     "message6": "🤔 Did you used the right operator?",
