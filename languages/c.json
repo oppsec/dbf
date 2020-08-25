@@ -1,0 +1,9 @@
+{
+    "message": "🤔 Are you blocking the loop event?",
+    "message2": "🤔 Did you declared the variable?",
+    "message3": "🤔 Have you tried using the && or || operators?",
+    "message4": "🤔 Are you using all variables?",
+    "message5": "🤔 Did you verified for some memory leak?",
+    "message6": "🤔 Have you tried running the code in a different machine?",
+    "message7": "🤔 Did you used the right operator?"
+}
