@@ -30,3 +30,4 @@
 
 ## [Released] 0.0.1 | 28/07/2020
 - 🎉 Initial release 
+
