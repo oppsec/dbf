@@ -5,5 +5,6 @@
     "message4": "🤔 Is the variable inside of block level?",
     "message5": "🤔 Did you used 'length' or 'lenght'?",
     "message6": "🤔 Are you using all the parameters?",
-    "message7": "🤔 Did you used the right variable name?"
+    "message7": "🤔 Did you used the right variable name?",
+    "message8": "💡 Try to reduce the number of if's and elses"
 }
