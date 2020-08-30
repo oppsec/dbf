@@ -22,17 +22,17 @@ function activate(context) {
 // Ask language name
 async function askLanguageName() {
 
-	const languageInput = await vscode.window.showInputBox({ placeHolder: 'Type a language name: SQL, PHP, JavaScript...'});
-	const languages = ['SQL', 'JavaScript', 'PHP', 'NodeJS', 'C', 'Java']
+	const languages = ['SQL', 'JavaScript', 'PHP', 'NodeJS', 'C', 'Java', 'Ruby', 'NET', 'Python'];
+	const languageInput = await vscode.window.showQuickPick(languages, { canPickMany: false });
 	
-	const languageDontExist = languages.indexOf(languageInput) === -1
+	const languageDontExist = languages.indexOf(languageInput) === -1;
 	
 	if (languageDontExist) {
 		vscode.window.showErrorMessage('❌ Language not available');
-		vscode.window.showInformationMessage(`📚 Available languagens | ${languages} `)
+		vscode.window.showInformationMessage(`📚 Available languagens | ${languages} `);
 	} else {
-		vscode.window.showInformationMessage(`✅ Using ${languageInput} syntax`)
-		askWaitingTime(languageInput)
+		vscode.window.showInformationMessage(`✅ Using ${languageInput} syntax`);
+		askWaitingTime(languageInput);
 	}
 
 }
