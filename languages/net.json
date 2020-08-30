@@ -1,0 +1,10 @@
+{
+    "message": "🤔 Are you using a reference like a value or vice versa",
+    "message2": "💡 Try to avoid accumulation of warnings in the compiler",
+    "message3": "💡 Mix strings with Format instead of +",
+    "message4": "🤔 Are you using LINQ to iterate the values?",
+    "message5": "🤔 Are you using var even knowing the date type?",
+    "message6": "🤔 Did you used the right operator?",
+    "message7": "🤔 Have you tried running the code in a different machine?",
+    "message8": "💡 Try to reduce the number of if's and elses"
+}

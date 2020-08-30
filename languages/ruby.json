@@ -1,0 +1,9 @@
+{
+    "message": "🤔 Are you putting too much logic into your codes?",
+    "message2": "🤔 Are you using memoization?",
+    "message3": "🤔 Are you treating all HTTP responses?",
+    "message4": "🤔 Are you forgetting a timeout setting?",
+    "message5": "💡 Try to reduce the number of if's and elses",
+    "message6": "🤔 Did you used the right operator?",
+    "message7": "🤔 Have you tried running the code in a different machine?"
+}

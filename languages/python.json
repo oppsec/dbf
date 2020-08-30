@@ -1,0 +1,11 @@
+{
+    "message": "🤔 Are you blocking the loop event?",
+    "message2": "🤔 Did you specify the parameters correctly?",
+    "message3": "🤔 Is your file name the same as a librarie?",
+    "message4": "🤔 Are you using the __init__ method?",
+    "message5": "🤔 Have you indented your code correctly?",
+    "message6": "🤔 Did you used the right operator?",
+    "message7": "🤔 Have you tried running the code in a different machine?",
+    "message8": "💡 Try following PEP-8 rules",
+    "message9": "💡 Try to reduce the number of if's and elses"
+}
