@@ -6,7 +6,7 @@
 	"author": "oppsec",
 	"repository": "https://github.com/oppsec/dbf",
 	"description": "🔥 Avoid mistakes that can get you fired",
-	"version": "0.0.5",
+	"version": "0.0.6",
 	"engines": {
 		"vscode": "^1.47.0"
 	},
