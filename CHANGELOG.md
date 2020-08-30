@@ -1,10 +1,11 @@
 # 🔥 DBF Official ChangeLog
 <br>
 
-## [Unreleased] 0.0.6 | ??/??/??
+## [Released] 0.0.6 | 30/08/2020
 - ✨ Now user can select the language instead of typing.
 - 👨‍💻 Languages support: Ruby, C#, Python
 - ⬆️ Improved the code
+- 👀 *Bonus: now DBF can send tips instead of only questions*
 <br><br>
 
 ## [Released] 0.0.5 | 25/08/2020
