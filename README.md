@@ -4,7 +4,7 @@
 
 <br><br>
 
-![version](https://img.shields.io/badge/VERSION-0.0.6-brightgreen.svg?style=for-the-badge)
+![version](https://img.shields.io/badge/VERSION-0.0.7-brightgreen.svg?style=for-the-badge)
 ![license](https://img.shields.io/badge/LICENSE-MIT-blue.svg?style=for-the-badge)
 
 ## Introduction
