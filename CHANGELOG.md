@@ -1,6 +1,12 @@
 # 🔥 DBF Official ChangeLog
 <br>
 
+## [Released] 0.0.7 | 07/09/2020
+- 🔥 Removed useless language checking.
+- 📝 Fixed README.md
+- ⬆️ Improved the code
+<br><br>
+
 ## [Released] 0.0.6 | 30/08/2020
 - ✨ Now user can select the language instead of typing.
 - 👨‍💻 Languages support: Ruby, C#, Python
