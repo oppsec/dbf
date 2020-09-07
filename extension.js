@@ -25,12 +25,7 @@ async function askLanguageName() {
 	const languages = ['SQL', 'JavaScript', 'PHP', 'NodeJS', 'C', 'Java', 'Ruby', 'NET', 'Python'];
 	const languageInput = await vscode.window.showQuickPick(languages, { canPickMany: false });
 	
-	const languageDontExist = languages.indexOf(languageInput) === -1;
-	
-	if (languageDontExist) {
-		vscode.window.showErrorMessage('❌ Language not available');
-		vscode.window.showInformationMessage(`📚 Available languagens | ${languages} `);
-	} else {
+	if (languageInput) {
 		vscode.window.showInformationMessage(`✅ Using ${languageInput} syntax`);
 		askWaitingTime(languageInput);
 	}
@@ -42,8 +37,8 @@ async function askLanguageName() {
 async function askWaitingTime(languageInput) {
 	const timeInput = await vscode.window.showInputBox({ placeHolder: 'Time to send messages. Example: 5...'})
 
-	if(isNaN(timeInput) || timeInput == '0') { // verify if timeInput is a number
-		vscode.window.showErrorMessage('❌ Time only can be numbers...');
+	if(isNaN(timeInput) || timeInput == '0') {
+		vscode.window.showErrorMessage('❌ Invalid time...');
 	} else {
 		vscode.window.showInformationMessage(`✅ Sending messages every ${timeInput} minute(s)`);
 		const time = parseInt(timeInput);

@@ -6,7 +6,7 @@
 	"author": "oppsec",
 	"repository": "https://github.com/oppsec/dbf",
 	"description": "🔥 Avoid mistakes that can get you fired",
-	"version": "0.0.6",
+	"version": "0.0.7",
 	"engines": {
 		"vscode": "^1.47.0"
 	},
@@ -21,7 +21,7 @@
 		"commands": [
 			{
 				"command": "dbf.activate",
-				"title": "DBF | Turn ON"
+				"title": "🔥 Enable DBF"
 			}
 		]
 	},
