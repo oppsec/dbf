@@ -33,4 +33,4 @@
 <br><br>
 
 ## Contributing
-You can contribute by suggesting a message or opening a pull request to improve the code<br>
+You can contribute by suggesting a message as a issue or opening a pull request to improve the code<br>
