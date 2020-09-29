@@ -1,6 +1,12 @@
 # 🔥 DBF Official ChangeLog
 <br>
 
+## [Released] 0.0.8 | 28/09/2020
+- 🔥 Removed useless language name checking.
+- ✨ Added a default messages option instead languages.
+- ⬆️ Improved the code
+<br><br>
+
 ## [Released] 0.0.7 | 07/09/2020
 - 🔥 Removed useless language checking.
 - 📝 Fixed README.md

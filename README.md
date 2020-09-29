@@ -4,7 +4,7 @@
 
 <br><br>
 
-![version](https://img.shields.io/badge/VERSION-0.0.7-brightgreen.svg?style=for-the-badge)
+![version](https://img.shields.io/badge/VERSION-0.0.8-brightgreen.svg?style=for-the-badge)
 ![license](https://img.shields.io/badge/LICENSE-MIT-blue.svg?style=for-the-badge)
 
 ## Introduction
@@ -13,6 +13,7 @@
 - 🤔 Have you tried running the code in a different machine?
 - 🤔 Did you used the right operator?
 - 💡 Try to reduce the number of if's and elses
+- 💡 Try re-writing your code
 
 <br><br>
 
