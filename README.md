@@ -33,5 +33,4 @@
 <br><br>
 
 ## Contributing
-You can contribute suggesting a message or creating a pull request to improve the code.<br>
-* What I need to do to suggest a message or a tip? - Create a issue.
+You can contribute by suggesting a message or opening a pull request to improve the code<br>
