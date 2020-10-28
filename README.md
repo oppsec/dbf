@@ -1,11 +1,14 @@
 ## Don't Be Fired | 🔥 Avoid mistakes that can get you fired
 
-![banner](https://i.imgur.com/FS5DhxE.png)
+<img src="https://i.imgur.com/FS5DhxE.png" width="800">
 
 <br><br>
 
-![version](https://img.shields.io/badge/VERSION-0.0.8-brightgreen.svg?style=for-the-badge)
+![version](https://img.shields.io/badge/VERSION-0.0.9-brightgreen.svg?style=for-the-badge)
 ![license](https://img.shields.io/badge/LICENSE-MIT-blue.svg?style=for-the-badge)
+![license](https://img.shields.io/badge/VSCODE-1.50-white.svg?style=for-the-badge)
+
+<br><br>
 
 ## Introduction
 **Don't Be Fired** is a extesion which will help you with your code, in some minutes the extension will send a tip or common mistakes message box.
@@ -28,10 +31,4 @@
 <br><br>
 
 ## Current languages support
-- SQL, Ruby, Python, PHP, NodeJS, .NET, JavaScript, Java & C/C++
-
-<br><br>
-
-## Contributing
-You can contribute suggesting a message or creating a pull request to improve the code.<br>
-* What I need to do to suggest a message or a tip? - Create a issue.
+- SQL, Ruby, Python, PHP, NodeJS, .NET, JavaScript, Java & C/C++...
