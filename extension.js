@@ -1,4 +1,5 @@
 const vscode = require('vscode');
+const vs = vscode.window;
 
 /**
  * @param {vscode.ExtensionContext} context
@@ -7,11 +8,12 @@ const vscode = require('vscode');
 
  // Activate extension
 function activate(context) {
+
 	console.log('DBF activated 🥳');
 	const dbfActivate = 'dbf.activate';
 
 	let turnon = vscode.commands.registerCommand(dbfActivate, function () {
-		vscode.window.showInformationMessage(`🎉 Dont Be Fired extension activated`);
+		vs.showInformationMessage(`🎉 Dont Be Fired extension activated`);
 		askLanguageName();
 	});
 
@@ -20,45 +22,54 @@ function activate(context) {
 
 
 // Ask language name
-async function askLanguageName() {
+const askLanguageName = async () => {
+
 	const languages = ['Default', 'SQL', 'JavaScript', 'PHP', 'NodeJS', 'C', 'Java', 'Ruby', 'NET', 'Python'];
-	const languageInput = await vscode.window.showQuickPick(languages, { canPickMany: false });
+	const languageInput = await vs.showQuickPick(languages, { canPickMany: false });
 	
-	vscode.window.showInformationMessage(`✅ Using ${languageInput} syntax`);
+	vs.showInformationMessage(`✅ Using ${languageInput} syntax`);
 	askWaitingTime(languageInput);
 
 }
 
 
 // Ask time to send messages
-async function askWaitingTime(languageInput) {
-	const timeInput = await vscode.window.showInputBox({ placeHolder: 'Type which every time you want to receive the messages. Example: 1'})
+const askWaitingTime = async (languageInput) => {
+
+	const timeInput = await vs.showInputBox({ placeHolder: 'Type the messages time. Example: 1'})
 
 	if(isNaN(timeInput) || timeInput == '0') {
-		vscode.window.showErrorMessage('❌ Invalid time...');
+		vs.showErrorMessage('❌ Invalid time...');
 	} else {
-		vscode.window.showInformationMessage(`✅ Sending messages every ${timeInput} minute(s)`);
-		const messagesTime = parseInt(timeInput);
+		vs.showInformationMessage(`✅ Sending messages every ${timeInput} minute(s)`);
+
+		const messagesTime = parseInt(timeInput)
 
 		setInterval(function () {
 			randomMessage(languageInput);
 		}, messagesTime * 60000); // 1x60000 = 1 minute
+
+		console.log(typeof messagesTime)
+
 	}
 }
 
 
 // Get random message from jsons
-function randomMessage(languageInput) {
+const randomMessage = (languageInput) => {
 	try {
-		const languageJsonFile = require(`./languages/${languageInput.toLocaleLowerCase()}.json`) // Get JSON file with the messages inside the languages folder
-		const jsonMessages = Object.values(languageJsonFile)
-		const getRandomMessage = jsonMessages[parseInt(Math.random() * jsonMessages.length)]
 
-		vscode.window.showInformationMessage(getRandomMessage); // Send a messagebox with a random message
+		const languageJsonFile = require(`./languages/${languageInput.toLocaleLowerCase()}.json`)
+		const getJsonMessages = Object.values(languageJsonFile)
+		const randomMessage = getJsonMessages[parseInt(Math.random() * getJsonMessages.length)]
+
+		vs.showInformationMessage(randomMessage);
+
 	} catch (error) {
-		vscode.window.showErrorMessage("❌ Error ->", error)
+		vs.showErrorMessage("❌ Error ~> ", error)
 	}
 }
+
 
 function deactivate() { }
 
