@@ -10,7 +10,7 @@
 
 <br><br>
 
-## Introduction
+## 🚩 Introduction
 🔥 DBF or **Don't be Fired** is a Visual Studio Code extension which send message boxes to remind you to avoid common mistakes
 
 - 🤔 Have you tried running the code in a different machine?
@@ -20,18 +20,15 @@
 
 <br><br>
 
-## Set-up
+## ⚙️ Set-up
 1. Open your Visual Studio Code
-2. Press `CTRL+Shift+X` or `CMD+Shift+X` to open extensions menu
+2. Press `CTRL+Shift+X` or `CMD+Shift+X` to open Visual Studio Code extensions menu
 3. Search for `dbf` or `dbf-publisher`
-4. Click in **INSTALL**
-5. Press F1 and type or select `🔥 Enable DBF`
-6. **Done!** 🥳
+4. Click in **INSTALL** button
+5. Press F1 and type or select `🔥 Enable DBF` to enable the extension
+6. Done! DBF is running now 🥳
 
 <br><br>
 
-## Current languages support
+## 👨‍💻 Current languages support
 - SQL, Ruby, Python, PHP, NodeJS, .NET, JavaScript, Java & C/C++...
-
-<br><br>
-
