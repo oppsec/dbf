@@ -11,7 +11,7 @@
 <br><br>
 
 ## Introduction
-**Don't Be Fired** is a extesion which will help you with your code, in some minutes the extension will send a tip or common mistakes message box.
+🔥 DBF or **Don't be Fired** is a Visual Studio Code extension which send message boxes to remind you to avoid common mistakes
 
 - 🤔 Have you tried running the code in a different machine?
 - 🤔 Did you used the right operator?
